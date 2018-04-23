@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>AOG Portfolio</title>
+   <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.css">
+   <link rel="stylesheet" href="/css/style.css">
+
+   <!-- Background Image !-->
+   <style type="text/css">
+      body{
+         background-color: #f4f4f4;
+      }
+      #bgImage {
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+         padding-top: 5em;
+         padding-bottom: 5em;
+      }
+      .swiper-container {
+         width: 100%;
+         height: 657px;
+      }
+      .swiper-slide.img{
+         width :100%;
+
+      }
+      .swiper-slide {
+         text-align: center;
+         font-size: 18px;
+         background: #fff;
+         /* Center slide text vertically */
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: -webkit-flex;
+         display: flex;
+         -webkit-box-pack: center;
+         -ms-flex-pack: center;
+         -webkit-justify-content: center;
+         justify-content: center;
+         -webkit-box-align: center;
+         -ms-flex-align: center;
+         -webkit-align-items: center;
+         align-items: center;
+      }
+   </style>
+</head>
+<body>
+
+
+
+<!-- Main Menu !-->
+<div class="ui inverted fixed menu color">
+   <div class="ui container">
+      <div class="left menu">
+         <h1 class="name-initial">AO</h1>
+      </div>
+      <div class="ui inverted secondary right menu top">
+         <a class="active item" >Home</a>
+         <a class="item" href="#contactme">My Blog</a>
+         <a class="item primary radius mini button" href="#quick">Quick</a>
+         <button class="ui primary radius mini button">
+            My Resume
+         </button>
+      </div>
+   </div>
+</div>
+
+
+
+<!--Resume Modal-->
+<div class="ui tiny modal">
+   <i class="close icon"></i>
+   <div class="ui dividing header">My Resume</div>
+   <div class="content">
+      <div class="ui button">Download</div>
+   </div>
+   <div class="actions">
+      <div class="ui button close">Cancel</div>
+   </div>
+</div>
+
+<div class="swiper-container">
+   <div class="swiper-wrapper">
+      <div class="swiper-slide"><img class="swiper-slide img" src="/img/background5.jpg"></div>
+   </div>
+   <div id="welcome-float">
+      <h1 class=" ui center aligned central-header header">
+         Hi,
+      </h1>
+      <h2 class="welcome-color">
+         Welcome to my personal site, please have a smooth ride...
+      </h2>
+      <button class="ui primary call button ">
+         Contact Me
+      </button>
+   </div>
+    <!-- Add Pagination -->
+   <div class="swiper-pagination"></div>
+   <!-- Add Arrows -->
+   <!--<div class="swiper-button-next"></div>-->
+   <!--<div class="swiper-button-prev"></div>-->
+</div>
+
+
+
+
+<div class="ui grid custom">
+   <div class="three column row shrink">
+      <div class="column">
+         <div class="ui card info">
+            <div class="extra content">
+               <div class="center aligned author">
+                  <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/jenny.jpg"> Education
+               </div>
+            </div>
+            <div class="content">
+               <div class="center aligned description">
+                  <p>Jenny is a student studying Media Management at the New School</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="column">
+         <div class="ui card info">
+            <div class="extra content">
+               <div class="center aligned author">
+                  <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/jenny.jpg"> Activities
+               </div>
+            </div>
+            <div class="content">
+               <div class="center aligned description">
+                  <p>Jenny is a student studying Media Management at the New School</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="column">
+         <div class="ui card info">
+            <div class="extra content">
+               <div class="center aligned author">
+                  <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/jenny.jpg"> Skills
+               </div>
+            </div>
+            <div class="content">
+               <div class="center aligned description">
+                  <p>Jenny is a student studying Media Management at the New School</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="ui contact container bg">
+   <div class="ui large header contact-form">Contact Me</div>
+   <div class="content">
+      <form class="ui tiny form" method="post" action="/">
+            <div class="field">
+               <input type="text" name="first_name" placeholder="First Name">
+            </div>
+            <div class="field">
+               <input type="text" name="last_name" placeholder="Last Name">
+            </div>
+
+         <div class="two fields">
+            <div class="field">
+               <input type="email" name="email" placeholder="E-mail">
+            </div>
+            <div class="field">
+               <input type="text" name="phone_number" placeholder="Phone Number">
+            </div>
+         </div>
+         <div class="field">
+            <textarea name="message" placeholder="Write message here"></textarea>
+         </div>
+         <input type="submit" value="Submit" class="ui submit button"/>
+          <%- messages() %>
+      </form>
+   </div>
+</div>
+
+
+<div class="ui inverted horizontal footer segment">
+   <div class="ui center aligned container">
+      <div class="ui inverted divided equal weight center aligned padded stackable grid">
+         <div class="eight wide contact-margin column">
+            <div class="row">
+               <button class="ui circular facebook icon button btn_rte_space">
+                  <i class="facebook icon social_icons"></i>
+               </button>
+               <button class="ui circular twitter icon button btn_rte_space">
+                  <i class="twitter icon social_icons"></i>
+               </button>
+               <button class="ui circular linkedin icon button btn_rte_space">
+                  <i class="linkedin icon"></i>
+               </button>
+               <button class="ui circular google plus icon button">
+                  <i class="google plus icon"></i>
+               </button>
+            </div>
+         </div>
+
+         <div class="eight wide column">
+            <div class="ui list">
+               <div class="item">
+                  <i class="marker icon"></i>
+                  <div class="content">
+                     Meltwater Entrepreneur School of Technology
+                  </div>
+               </div>
+               <div class="item">
+                  <i class="mail icon"></i>
+                  <div class="content">
+                     <a href="mailto:draogtech@gmail.com">draogtech@gmail.com</a>
+                  </div>
+               </div>
+               <div class="item">
+                  <i class="call icon"></i>
+                  <div class="content">
+                     <div class="ui list">
+                        <div class="item">+233201415075</div>
+                        <div class="item">+2348093934662</div>
+                        <div class="item">+2348074098821</div>
+                     </div>
+                  </div>
+               </div>
+
+         </div>
+      </div>
+   </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+<script src="/js/frontend.js"></script>
+
+   <script>
+      var swiper = new Swiper('.swiper-container', {
+         spaceBetween: 30,
+         centeredSlides: true,
+         autoplay: {
+            delay: 10000,
+            disableOnInteraction: false,
+         },
+         pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+         },
+//         navigation: {
+//            nextEl: '.swiper-button-next',
+//            prevEl: '.swiper-button-prev',
+//         },
+      });
+   </script>
+
+</body>
+</html>

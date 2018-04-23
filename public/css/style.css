@@ -1,0 +1,141 @@
+/*.ui.secondary.pointing.main_menu.inverted.menu{*/
+ /*position: fixed;*/
+
+/*}*/
+
+/*.ui.fixed.menu.color{*/
+  /*background-color: #614d4d;*/
+/*}*/
+
+.ui.large.header.contact-form{
+  text-align: center;
+  margin-top: -4rem;
+  margin-bottom: 4rem;
+}
+
+.ui.contact.container.bg{
+  background-color: #ffffff;
+}
+
+.ui.card.info{
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.three.column.row.shrink{
+  margin: 15%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%
+}
+
+.ui.grid.custom{
+  margin-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.welcome-color{
+  font-family: 'monospace';
+  color: #ffffff;
+  width :100%;
+  text-shadow: 0px -1px 12px rgba(94, 138, 223, 1);
+}
+
+.ui.primary.call.button{
+  border-radius: 4px;
+  width: 150px;
+  height: 50px;
+}
+
+.btn_rte_space {
+  margin-right: 0.25em !important;
+}
+
+.right.menu.top{
+  height: 3em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#welcome-float{
+  position: absolute;
+  top: 16%;
+  right: 25%;
+  left: 25%;
+  z-index: 9999;
+  text-align: center;
+}
+
+#welcome-float .my-image{
+  position: inherit;
+  top: -33%;
+  right: 33%;
+  width: 33%;
+}
+/*Media for mobile */
+@media only screen and (max-width: 680px) {
+  #image-float{
+    position: absolute;
+    top: 7%;
+    right: 3%;
+
+  }
+  #image-float .my-image {
+    top: 0%;
+    right: 27%;
+    width: 48%;
+  }
+
+}
+
+.ui.central-header.header {
+  font-family: 'monospace';
+  color: #e0dbdb;
+  width :100%;
+  padding-top :2em;
+  font-size: 4rem;
+}
+
+.grid-section{
+  background-color: white;
+}
+
+
+.ui.inverted.horizontal.footer.segment{
+  border-radius: 0em;
+}
+
+.ui.center.text-align.list{
+  text-align: center;
+}
+
+.eight.wide.contact-margin.column{
+  margin-top: 3.5em !important;
+}
+
+
+.ui.horizontal.profile.segment{
+  border-radius: 0em;
+  border: None;
+  background-color: white;
+}
+
+#profile-padding{
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.name-initial{
+  color: blue;
+  font-size: 50px;
+}
+
+.ui.contact.container{
+  padding: 7em;
+}
+
+.ui.about.stackable.grid.container{
+  padding: 5em;
+}
+
+.ui.primary.radius.mini.button{
+  border-radius: 0;
+}
