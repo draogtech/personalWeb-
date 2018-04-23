@@ -3,7 +3,7 @@
 var express = require('express');
 
 //require user model
-var User = require('/home/draogtech/personalweb/model/user.js');
+var User = require('model/user.js');
 
 
 //create router object
