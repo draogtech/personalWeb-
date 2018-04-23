@@ -3,7 +3,7 @@
 var express = require('express');
 
 //require user model
-var User = require('model/user.js');
+var User = require('../model/user');
 
 
 //create router object
