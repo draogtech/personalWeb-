@@ -1,7 +1,8 @@
 var express = require('express');
 var app = express();
-var port = process.env.PORT || 8000;
+var port = process.env.PORT || 3000;
 
+// flashing message to users after sending message on contact form
 var session = require('express-session');
 var cookieParser = require('cookie-parser');
 var flash = require('connect-flash');
@@ -36,6 +37,6 @@ app.use(express.static(__dirname + '/public'));
 
 // start the server
 app.listen(port, function() {
-   console.log('app started, listening to port 8000');
+   console.log('app started, listening to port %s', port);
 });
 
