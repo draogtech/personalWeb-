@@ -1,6 +1,6 @@
 var mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost:27017/my_db");
+mongoose.connect("mongodb://heroku_2fxxp1pl:2b13gpis4bj5a1rohqe1hf9tv6@ds159129.mlab.com:59129/heroku_2fxxp1pl");
 
 var userSchema = mongoose.Schema({
    first_name: String,
