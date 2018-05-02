@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1">
    <title>AOG Portfolio</title>
    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
@@ -10,9 +11,12 @@
 
    <!-- Background Image !-->
    <style type="text/css">
-      body{
-         background-image : url("../public/img/dare_2.png");
-         background-repeat: no-repeat;
+      /*Media for mobile */
+      @media (min-width: 320px) and (max-width: 480px) {
+         body{
+            width: 254%;
+         }
+
       }
       #bgImage {
          background-position: center;

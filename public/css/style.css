@@ -114,21 +114,8 @@
   right: 33%;
   width: 33%;
 }
-/*Media for mobile */
-@media only screen and (max-width: 680px) {
-  #image-float{
-    position: absolute;
-    top: 7%;
-    right: 3%;
 
-  }
-  #image-float .my-image {
-    top: 0%;
-    right: 27%;
-    width: 48%;
-  }
 
-}
 
 .ui.central-header.header {
   font-family: 'monospace';
