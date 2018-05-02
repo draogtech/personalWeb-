@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var port = process.env.PORT || 8000;
+var port = process.env.PORT || 3000;
 
 // flashing message to users after sending message on contact form
 var session = require('express-session');
