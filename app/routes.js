@@ -27,7 +27,7 @@ router.post("/", (req, res) => {
          last_name: req.body.last_name,
          email: req.body.email,
          phone_number: req.body.phone_number,
-         message: req.message
+         message: req.body.message
       });
    new_user.save()
          .then(item => {
